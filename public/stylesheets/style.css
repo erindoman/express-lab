@@ -1,0 +1,12 @@
+body {
+    padding: 50px;
+    font: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: red;
+}

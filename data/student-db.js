@@ -1,8 +1,8 @@
 const students = [
-    {student: 'Erin', grade: 'A++++'},
-    {student: 'Bob', grade: 'A-'},
-    {student: 'Sally', grade: 'A+'},
-    {student: 'Steve', grade: 'B'}
+    {name: 'Erin', grade: 'A++++', pass: true},
+    {name: 'Bob', grade: 'A-', pass: true},
+    {name: 'Sally', grade: 'A+', pass: true},
+    {name: 'Steve', grade: 'F', pass: false}
 ]
 
 module.exports = {
@@ -10,3 +10,4 @@ module.exports = {
         return students;
     }
 }
+

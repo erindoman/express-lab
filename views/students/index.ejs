@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Express</title>
+    <title>Express Students </title>
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-    
-    <h1>Learning Express</h1>
+    <h1>Grade Sheet</h1>
+    <a href="/">Home</a>
+    <ul>
+        <% students.forEach(function(t) { %>
+            <li>
+                <%= t.name %>
+                <br>
+                <%= t.grade %>
+                <br>
+                <%= t.pass ? `${t.name} passed!` : 'Try again!' %>
+            
+            </li>
+      <% }) %>
+    </ul>
 
 </body>
 </html>
